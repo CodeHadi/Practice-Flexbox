@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #09901f;
+}
+header a{
+    color: #ffff;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+}
+.logo{
+    margin: 0 auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+nav ul li{
+    padding: 0.8rem;
+    text-transform: uppercase;
+}
+#social-links{
+    padding: 0.8rem;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-box{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 32%;
+    max-width: 37rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.service-box img{
+    width: 100%;
+}
+.service-box h3{
+  margin: 0.5rem 0 1rem;
+}
+.service-box p{
+    margin: 0 0 1rem;
+}
+#main{
+    display: flex;
+    padding: 1rem;
+}
+aside{
+    flex-basis: 20vw;
+    background-color: rgb(169, 255, 255);
+    padding: 1rem;
+}
+footer{
+    background-color: #09901f;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+article{
+    padding: 1rem;
+}
+article h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+article p{
+    font-size: 1.5rem;
+}
+aside ul{
+    list-style: none;
+}
+aside ul a{
+   color: #09901f;
+   padding: 1rem;
+   display: block;
+   border-bottom:0.1rem solid gray ;
+   font-size: 1.5rem ;
+}
+aside img{
+    width: 100%;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.call-to-action a{
+    background: gray;
+    color: #fff;
+    padding: 0.8rem 1.3rem;
+    display: block;
+    border: 0.2rem solid transparent;
+}
+.call-to-action a:hover{
+    color: gray;
+    background: transparent;
+    border: 0.2rem solid gray;
+}
+h3{
+    font-size: 2rem;
+}
+nav ul li:hover{
+    background: #000000;
+    border-radius: 1.5rem;
+}
+
+
+/* media Query */
+@media screen and (max-width:1309px) {
+    .service-box{
+        flex-basis: 50%;
+    }
+
+    aside{
+        flex-basis: 30vw;
+    }
+}
+    
+@media screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #main{
+        flex-direction: column;
+    }
+    article{
+        order: -1;
+    }
+    .service-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    h2{
+        align-items: center;
+    }
+}
+ 
+/* form styling */
+.wrapper{
+    background-color: #5dca6f77;
+    list-style: none;
+    margin: 5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.wrapper li{
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+.wrapper li label{
+    flex: 1;
+}
+.wrapper li input{
+    flex: 2;
+}
+.btn{
+    margin-top: 1rem;
+    padding:  0.5rem 2rem;
+    border: #fff;
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: #09901faf;
+}
+.btn:hover{
+    color: #fff;
+    background: #000000;
+}
+
+/* media Query  */
+@media screen and (min-width:1200px) {
+    .wrapper li input{
+        flex: 8;
+    }
+}
+@media screen and (min-width:992px) {
+    .wrapper li input{
+        flex: 6;
+    }
+}
+@media screen and (min-width:786px) {
+    .wrapper li input{
+        flex: 4;
+    }
+}
+@media screen and (min-width:500px) {
+    .wrapper li input{
+        flex: 3;
+    }
+}
+@media screen and (min-width:300px) and (max-width:499px) {
+    .wrapper li{
+        flex-direction: column;
+    }
+    .wrapper li input{
+        flex: 4;
+    }
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* signin styling */
+.container2{
+    max-width: 1200px;
+    width: 40%;
+    margin: 0 auto;
+}
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    background-color: #5dca6f77;
+    list-style: none;
+    margin: 5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+.oops{
+    font-weight: bold;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.smg{
+  padding: 0.5rem;
+  border: 3px solid #09901f;
+  margin-bottom: 2rem;
+  background-color: #f4f4f4;
+  width: 30rem;
+}
